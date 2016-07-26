@@ -1,0 +1,32 @@
+ nav ul li{
+	display: inline;
+	padding: 0 30px 0 30px;	
+}
+
+nav {
+	border: solid;
+	background-color: #FFB4B0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+
+}
+
+ .first {
+	border: solid;
+	background-color: #4DD7FA;
+	margin-top: 10px;
+	margin-right: 700px;
+	float:left;
+}
+
+.second {
+	border: solid;
+	background-color: #FEFAC0;
+	margin-top: -376px;
+	float: right;
+	padding-right: 620px;
+	line-height: 10px;
+}
