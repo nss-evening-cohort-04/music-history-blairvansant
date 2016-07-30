@@ -30,3 +30,15 @@ a {
 	padding-right: 540px;
 	line-height: 10px;
 }
+
+.column1 {
+	margin-left: 25px;
+}
+
+.column2 {
+	margin-left: 34px;
+}
+
+.column3 {
+	margin-left: 23px;
+}
