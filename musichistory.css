@@ -6,6 +6,7 @@
 nav {
 	border: solid;
 	background-color: #FFB4B0;
+	margin-bottom: 20px;
 }
 
 a {
@@ -17,18 +18,21 @@ a {
  .first {
 	border: solid;
 	background-color: #4DD7FA;
-	margin-top: 10px;
-	margin-right: 700px;
+	margin: auto;
 	float:left;
+	line-height: 10px;
 }
 
 .second {
 	border: solid;
 	background-color: #FEFAC0;
-	margin-top: -322px;
+	margin: auto;
 	float: right;
 	padding-right: 540px;
 	line-height: 10px;
+}
+	
+
 }
 
 .column1 {
@@ -42,3 +46,4 @@ a {
 .column3 {
 	margin-left: 23px;
 }
+
