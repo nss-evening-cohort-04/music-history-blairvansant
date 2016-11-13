@@ -1,77 +1,65 @@
-<!doctype html>
+ `<!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="musichistory.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/musichistory.css">
 </head>
-	
-	<nav>
-		<ul>
-			<li><a href="#">View Music</a></li>
-			<li><a href="#">Add Music</a></li>
-			<li><a href="#">Profile</a></li>
-		</ul>
-	</nav>
 
-		<div class="first">
-		<p>Song Length:</p>
-			<input class="slider" type="range" name="song-length">
-			<br>
-			<p>Artist:</p>
-			<select>
-				<option>T.Rex</option>
-				<option>Rolling Stones</option>
-				<option>Dire Straits</option>
-				<option>Black Sabbath</option>
-				<option>David Bowie</option>
-			</select>
-			<br>
-			<p>Album:</p>
-			<select>
-				<option>The Slider</option>
-				<option>Beggars Banquet</option>
-				<option>Dire Straits</option>
-				<option>Master of Reality</option>
-				<option>The Man Who Sold the World</option>
-			</select>
-			<br>
-
-			<p>Genre:</p>
-				<input type="checkbox">Rock</input>
-				<input class="column1"type="checkbox">Classical</link>
-				<br>
-				<input type="checkbox">Pop</input>
-				<input class="column2" type="checkbox">Jazz</input>
-				<br>
-				<input type="checkbox">Blues</input>
-				<input class="column3" type="checkbox">Hip Hop</input><br>
-				<!-- <button type="button" class="btn btn-filter">Filter</button> -->
-				<button type="button" class="btn btn-primary btn-sm btn-block">Filter</button>
-		</div>
-
-		<div class="second">
-			<p>Song Name</p>
-			<br>
-			<p>Artist Name | Album Name | Genre</p>
-			<br>
-			<p>Song Name</p>
-			<br>
-			<p>Artist Name | Album Name | Genre</p>
-			<br>
-			<p>Song Name</p>
-			<br>
-			<p>Artist Name | Album Name | Genre</p>
-			<br>
-			<p>Song Name</p>
-			<br>
-			<p>Artist Name | Album Name | Genre</p>
-	    </div>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <body>
 
+<div class="top">
+	<ul>
+		<li>View Music | </li>
+		<li><a href="#">Add Music</a> | </li>
+		<li><a href="#">Profile</a></li>
+	</ul>
+</div>
 
+<div class="left">
+	<label>Song Length:</label>
+	<input type="range" value="0" max="100"></input>
+	<form>
+		<label>Artist:</label>
+		<select name="artist">
+			<option value="MacDemarco">Mac Demarco</option>
+			<option value="Homeshake">Homeshake</option>
+			<option value="AngelOlsen">Angel Olsen</option>
+			<option value="College">College</option>
+			<option value="Trex">Trex</option>
+		</select>
+
+		<label>Album:</label>
+		<select name="album">
+			<option value="RockAndRollNightClub">Rock and Roll Night Club</option>
+			<option value="MidnightSnack">Midnight Snack</option>
+			<option value="MYWOMAN">MY WOMAN</option>
+			<option value="Heritage">Heritage</option>
+			<option value="TheSlider">The Slider</option>
+		</select>
+	
+	<label>Genre:</label>
+	<div class="genre-box">
+		
+		<label><input type="checkbox" id="genre">Rock</label>
+		<label><input type="checkbox" id="genre">Pop</label>
+		<label><input type="checkbox" id="genre">Blues</label>
+		<label><input type="checkbox" id="genre">Classical</label>
+		<label><input type="checkbox" id="genre">Jazz</label>
+		<label><input type="checkbox" id="genre">Hip Hop</label>
+		</div>
+	</form>
+	<div class="fil-button">
+		<button type="submit" class="filter">Filter</button>
+	</div>	
+	
+
+</div>
+
+<div class="right" id="songDescription">
+	
+</div>
+<script type="text/javascript" src="javascripts/songs.js" ></script>
 </body>
 </html>
